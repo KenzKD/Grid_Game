@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &18444221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -297,6 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &52330904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -422,6 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &85979768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -547,6 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &86253679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -672,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &86259388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -797,6 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &91531357
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -922,6 +928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &98442775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1047,6 +1054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &144257305
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1284,6 +1292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &180847903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1409,6 +1418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &200185145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1534,6 +1544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &213994297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1659,6 +1670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &227674565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1784,6 +1796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &228341560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1909,6 +1922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &235624802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2034,6 +2048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &236762104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2159,6 +2174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &272016081
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2284,6 +2300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &292045787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2409,6 +2426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &295557190
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2534,6 +2552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &325213087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2659,6 +2678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &371900163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2784,6 +2804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &409794985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2909,6 +2930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &413407932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3034,6 +3056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &418825539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3159,6 +3182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &437366679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3284,6 +3308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &490810453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3409,6 +3434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &500246791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3534,6 +3560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &526602340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3659,6 +3686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &545060583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3784,6 +3812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &552094128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3909,6 +3938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &560895182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4034,6 +4064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &586404172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4159,6 +4190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &609053546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4284,6 +4316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &610567820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4409,6 +4442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &628259532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4534,6 +4568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &631966004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4659,6 +4694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &674766040
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4784,6 +4820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &687951998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4909,6 +4946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &696724443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5128,6 +5166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &717103954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5253,6 +5292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &718112995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5378,6 +5418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &728229336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5503,6 +5544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &772007004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5628,6 +5670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &782042815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5753,6 +5796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &813732656
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5829,6 +5873,119 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813732653}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &818391062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818391067}
+  - component: {fileID: 818391066}
+  - component: {fileID: 818391065}
+  - component: {fileID: 818391064}
+  - component: {fileID: 818391063}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &818391063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818391062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5efbe64910ead04c9d23f0d910673e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleData: {fileID: 11400000, guid: 409931940bc91f44db23c19d9070c118, type: 2}
+  cam: {fileID: 963194227}
+--- !u!136 &818391064
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818391062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &818391065
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818391062}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &818391066
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818391062}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &818391067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818391062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &887990105
 GameObject:
   m_ObjectHideFlags: 0
@@ -5878,6 +6035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &887990108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6003,6 +6161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &916383475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6128,6 +6287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &954997925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6337,6 +6497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &970593697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6462,6 +6623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &985498503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6587,6 +6749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &985558608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6712,6 +6875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &1006769416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6837,6 +7001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &1027016940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6962,6 +7127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &1047314562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7087,6 +7253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &1049807869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7212,6 +7379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &1064056630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7337,6 +7505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &1081169988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7462,6 +7631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &1116674456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7587,6 +7757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &1120444516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7712,6 +7883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &1145989991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7837,6 +8009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &1158379229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7962,6 +8135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &1190815884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8087,6 +8261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &1198991633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8212,6 +8387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &1218297246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8337,6 +8513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &1241912680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8462,6 +8639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &1265833417
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8587,6 +8765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &1277295238
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8712,6 +8891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &1346630627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8837,6 +9017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &1352123262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8962,6 +9143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &1365145462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9132,6 +9314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &1413967677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9257,6 +9440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &1438796875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9450,6 +9634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &1487091334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9575,6 +9760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 5, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &1538463795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9700,6 +9886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &1571853719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9825,6 +10012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 9}
+  previousTile: {fileID: 0}
 --- !u!65 &1581551431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9950,6 +10138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &1592263439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10075,6 +10264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &1648591890
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10200,6 +10390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &1651067056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10325,6 +10516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &1668855373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10450,6 +10642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &1710463262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10526,6 +10719,104 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710463259}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1721471875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721471879}
+  - component: {fileID: 1721471878}
+  - component: {fileID: 1721471877}
+  - component: {fileID: 1721471876}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!136 &1721471876
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721471875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1721471877
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721471875}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8c5cb27a78375e44eae96b292423fa76, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1721471878
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721471875}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1721471879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721471875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9, y: 1.5, z: 9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1746583376
 GameObject:
   m_ObjectHideFlags: 0
@@ -10575,6 +10866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &1746583379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10700,6 +10992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &1750471290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10825,6 +11118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &1789135549
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10950,6 +11244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 2, y: 6}
+  previousTile: {fileID: 0}
 --- !u!65 &1843946705
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11075,6 +11370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &1865895062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11200,6 +11496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 1, y: 2}
+  previousTile: {fileID: 0}
 --- !u!65 &1877526698
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11325,6 +11622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &1899366685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11450,6 +11748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 5}
+  previousTile: {fileID: 0}
 --- !u!65 &1909858383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11706,6 +12005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 4, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &1990106695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11831,6 +12131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &2011852954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11956,6 +12257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 8, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &2026366312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12081,6 +12383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &2027957743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12206,6 +12509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &2063737619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12331,6 +12635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 4}
+  previousTile: {fileID: 0}
 --- !u!65 &2077826852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12456,6 +12761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 0, y: 7}
+  previousTile: {fileID: 0}
 --- !u!65 &2080208387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12581,6 +12887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 9, y: 0}
+  previousTile: {fileID: 0}
 --- !u!65 &2080884626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12706,6 +13013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 8}
+  previousTile: {fileID: 0}
 --- !u!65 &2099563340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12831,6 +13139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 7, y: 3}
+  previousTile: {fileID: 0}
 --- !u!65 &2117904486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12956,6 +13265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 3, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &2119106878
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13081,6 +13391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePosition: {x: 6, y: 1}
+  previousTile: {fileID: 0}
 --- !u!65 &2133014703
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour,AI
+public class PlayerMovement : MonoBehaviour, AI
 {
     public ObstacleData obstacleData;
     private TileInformation[,] tiles;
@@ -46,9 +46,9 @@ public class PlayerMovement : MonoBehaviour,AI
                 {
                     // Set the target tile to the position of the hit object
                     targetTile = info.tilePosition;
-                    Debug.Log("Player click on " + targetTile);
 
                     isReached = false;
+
                     // Start the MoveToTile coroutine
                     StartCoroutine(MoveToTile());
 

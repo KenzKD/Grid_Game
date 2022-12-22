@@ -33,18 +33,31 @@ public class EnemyMovement : MonoBehaviour, AI
         // Check if the left mouse button has been clicked
         if (Input.GetMouseButtonDown(0) && !isMoving)
         {
-            // Get the target tile from the player script
-            targetTile = player.targetTile;
-            // Debug.Log("Player on " + targetTile);
+            // Create a ray from the main camera to the mouse position
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
-            // Check if the player is not adjacent to the enemy
-            if (currentTile.x != targetTile.x || currentTile.y != targetTile.y)
+            // Check if the raycast hits a collider
+            if (Physics.Raycast(ray, out hit))
             {
-                // Set the isReached flag to false
-                isReached = false;
+                // Get the TileInformation component of the hit object
+                TileInformation info = hit.collider.gameObject.GetComponent<TileInformation>();
 
-                // Start the MoveToTile coroutine
-                StartCoroutine(MoveToTile());
+                // Check if the hit object has a TileInformation component and is not an obstacle
+                if (info != null && !obstacleData.grid[info.tilePosition.x, info.tilePosition.y])
+                {
+                    // Get the target tile from the player script
+                    targetTile = player.targetTile;
+
+                    // Check if the player is not adjacent to the enemy
+                    if (currentTile.x != targetTile.x || currentTile.y != targetTile.y)
+                    {
+                        isReached = false;
+
+                        // Start the MoveToTile coroutine
+                        StartCoroutine(MoveToTile());
+                    }
+                }
             }
         }
 

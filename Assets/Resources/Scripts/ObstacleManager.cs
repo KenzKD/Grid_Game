@@ -10,16 +10,16 @@ public class ObstacleManager : MonoBehaviour
     {
         grid = new GameObject[10, 10];
 
-        for (int x = 0; x < 10; x++)
-        {
-            for (int y = 0; y < 10; y++)
-            {
-                if (obstacleData.grid[x, y])
-                {
-                    grid[x, y] = Instantiate(obstacleData.obstaclePrefab, new Vector3(x, 1, y), Quaternion.identity);
-                }
-            }
-        }
+        // for (int x = 0; x < 10; x++)
+        // {
+        //     for (int y = 0; y < 10; y++)
+        //     {
+        //         if (obstacleData.grid[x, y])
+        //         {
+        //             grid[x, y] = Instantiate(obstacleData.obstaclePrefab, new Vector3(x, 1, y), Quaternion.identity);
+        //         }
+        //     }
+        // }
     }
 
     void Update()

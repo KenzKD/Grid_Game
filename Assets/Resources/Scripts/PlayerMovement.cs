@@ -5,11 +5,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public ObstacleData obstacleData; // Reference to the scriptable object that stores the obstacle data
-    public TileInformation[,] tiles; // 2D array of TileInformation objects representing the grid
-
-    private Vector2Int currentTile,targetTile; // The current tile position of the player
-    private bool isMoving; // Flag to indicate if the player is currently moving
+    public ObstacleData obstacleData;
+    public TileInformation[,] tiles;
+    private Vector2Int currentTile, targetTile;
+    private bool isMoving = false;
     public Camera cam;
 
     void Start()
@@ -30,22 +29,28 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
-        Vector3 Offset = new Vector3(0, 0, 5);
-
-        if(Input.GetMouseButtonDown(0))
+        // Check if the left mouse button has been clicked and the player is not currently moving
+        if (Input.GetMouseButtonDown(0) && !isMoving)
         {
+            // Create a ray from the main camera to the mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+
+            // Check if the raycast hits a collider
             if (Physics.Raycast(ray, out hit))
             {
-                // If the raycast hits a cube, display its information
+                // Get the TileInformation component of the hit object
                 TileInformation info = hit.collider.gameObject.GetComponent<TileInformation>();
+
+                // Check if the hit object has a TileInformation component and is not an obstacle
                 if (info != null && !obstacleData.grid[info.tilePosition.x, info.tilePosition.y])
                 {
+                    // Set the target tile to the position of the hit object
                     targetTile = info.tilePosition;
-                    StartCoroutine(MoveToTile());
                     Debug.Log("click on " + targetTile);
+
+                    // Start the MoveToTile coroutine
+                    StartCoroutine(MoveToTile());  
                 }
             }
         }
@@ -134,8 +139,10 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator FollowPath()
     {
+        isMoving = true;
         // Create a list to store the path
         List<Vector2Int> path = new List<Vector2Int>();
+        
 
         // Trace the path from the target tile back to the current tile
         TileInformation tile = tiles[targetTile.x, targetTile.y];
@@ -151,11 +158,18 @@ public class PlayerMovement : MonoBehaviour
         // Loop through the path and move the player to each tile
         foreach (Vector2Int t in path)
         {
-            // Move the player to the next tile
-            transform.position = new Vector3(t.x, (float)1.5,t.y);
+            Vector3 targetPosition = new Vector3(t.x, 1.5f, t.y);
+            while (transform.position != targetPosition)
+            {
+                //Move the player to the next Tile
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 5f);
+                // Wait for the next frame before continuing the loop
+                yield return null;
+            }
 
-            // Wait for the next frame before continuing the loop
-            yield return null;
+            // Update the currentTile variable
+            currentTile = targetTile;
         }
+        isMoving = false;
     }
 }

@@ -1242,7 +1242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoText: {fileID: 170023785}
-  cam: {fileID: 0}
 --- !u!1 &180847900
 GameObject:
   m_ObjectHideFlags: 0
@@ -5906,7 +5905,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleData: {fileID: 11400000, guid: 409931940bc91f44db23c19d9070c118, type: 2}
-  cam: {fileID: 963194227}
+  currentTile: {x: 0, y: 0}
+  targetTile: {x: 0, y: 0}
+  isMoving: 0
+  isReached: 0
 --- !u!136 &818391064
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6440,14 +6442,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 4.82, y: 4, z: -10}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 4.82, y: 6.78, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &970593694
 GameObject:
   m_ObjectHideFlags: 0
@@ -10731,13 +10733,14 @@ GameObject:
   - component: {fileID: 1721471878}
   - component: {fileID: 1721471877}
   - component: {fileID: 1721471876}
+  - component: {fileID: 1721471880}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!136 &1721471876
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10747,7 +10750,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1721471875}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -10817,6 +10820,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1721471880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721471875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d15428a1057d5f44b5369ceadbab21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleData: {fileID: 11400000, guid: 409931940bc91f44db23c19d9070c118, type: 2}
+  currentTile: {x: 0, y: 0}
+  targetTile: {x: 0, y: 0}
+  isMoving: 0
+  isReached: 0
+  player: {fileID: 818391063}
 --- !u!1 &1746583376
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +5,11 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour, AI
 {
     public ObstacleData obstacleData;
-    public TileInformation[,] tiles;
-    private Vector2Int currentTile, targetTile;
-    private bool isMoving = false;
-    public Camera cam;
+    private TileInformation[,] tiles;
+    private TileInformation help;
+    public Vector2Int currentTile, targetTile;
+    public bool isMoving = false;
+    public bool isReached = false;
     public PlayerMovement player;
 
     void Start()
@@ -28,30 +28,38 @@ public class EnemyMovement : MonoBehaviour, AI
         }
     }
 
-    private void Update()
+    void Update()
     {
-        // Check if the enemy is not currently moving
-        if (!isMoving && player.isReached && !player.isMoving)
+        // Check if the left mouse button has been clicked
+        if (Input.GetMouseButtonDown(0) && !isMoving)
         {
-            // Get the player's current tile position
-            Vector2Int playerTile = player.currentTile;
+            // Get the target tile from the player script
+            targetTile = player.targetTile;
+            // Debug.Log("Player on " + targetTile);
 
-            // // Check if the player is in an adjacent tile (up, down, left, or right)
-            // if (playerTile.x == currentTile.x && Math.Abs(playerTile.y - currentTile.y) == 1 ||
-            //     playerTile.y == currentTile.y && Math.Abs(playerTile.x - currentTile.x) == 1)
-            // {
-                // The player is in an adjacent tile, so set the target tile to the player's current tile
-                targetTile = playerTile;
-                Debug.Log("target on " + targetTile);
+            // Check if the player is not adjacent to the enemy
+            if (currentTile.x != targetTile.x || currentTile.y != targetTile.y)
+            {
+                // Set the isReached flag to false
+                isReached = false;
 
                 // Start the MoveToTile coroutine
                 StartCoroutine(MoveToTile());
-            // }
+            }
+        }
+
+        // Check if the player has reached the target tile
+        if (isReached)
+        {
+            // Stop the MoveToTile coroutine if the player has reached the target tile
+            StopCoroutine(MoveToTile());
         }
     }
 
     public IEnumerator MoveToTile()
     {
+        yield return new WaitForSeconds(1f);
+
         // Reset the previousTile variable of all tiles
         for (int x = 0; x < tiles.GetLength(0); x++)
         {
@@ -111,7 +119,6 @@ public class EnemyMovement : MonoBehaviour, AI
         isMoving = true;
         // Create a list to store the path
         List<Vector2Int> path = CalculatePath();
-        Debug.Log(path.Count);
 
         // Loop through the path and move the player to each tile
         foreach (Vector2Int t in path)
@@ -120,7 +127,7 @@ public class EnemyMovement : MonoBehaviour, AI
             while (transform.position != targetPosition)
             {
                 //Move the player to the next Tile
-                transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 5f);
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 10f);
                 // Wait for the next frame before continuing the loop
                 yield return null;
             }
@@ -129,6 +136,7 @@ public class EnemyMovement : MonoBehaviour, AI
             currentTile = targetTile;
         }
         isMoving = false;
+        isReached = true;
     }
 
     // This function returns a list of the tiles that are neighbors of the given tile
@@ -161,6 +169,7 @@ public class EnemyMovement : MonoBehaviour, AI
     public List<Vector2Int> CalculatePath()
     {
         List<Vector2Int> path = new List<Vector2Int>();
+        List<Vector2Int> path2 = new List<Vector2Int>();
 
         // Trace the path from the target tile back to the current tile
         TileInformation tile = tiles[targetTile.x, targetTile.y];
@@ -172,6 +181,13 @@ public class EnemyMovement : MonoBehaviour, AI
 
         // Reverse the path to get the correct order
         path.Reverse();
-        return path;
+
+        // Return a list containing the second-to-last element in the path list (the one-block gap from the target)
+        for (int i = 0; i < path.Count - 2; i++)
+        {
+            path2.Add(path[i]);
+        }
+
+        return path2;
     }
 }

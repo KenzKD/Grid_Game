@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour,AI
 {
     public ObstacleData obstacleData;
-    public TileInformation[,] tiles;
+    private TileInformation[,] tiles;
     public Vector2Int currentTile, targetTile;
     public bool isMoving = false;
     public bool isReached = false;
-    public Camera cam;
 
     void Start()
     {
@@ -48,7 +46,7 @@ public class PlayerMovement : MonoBehaviour,AI
                 {
                     // Set the target tile to the position of the hit object
                     targetTile = info.tilePosition;
-                    Debug.Log("click on " + targetTile);
+                    Debug.Log("Player click on " + targetTile);
 
                     isReached = false;
                     // Start the MoveToTile coroutine
@@ -56,6 +54,13 @@ public class PlayerMovement : MonoBehaviour,AI
 
                 }
             }
+        }
+
+        // Check if the player has reached the target tile
+        if (isReached)
+        {
+            // Stop the MoveToTile coroutine if the player has reached the target tile
+            StopCoroutine(MoveToTile());
         }
     }
 
@@ -128,11 +133,11 @@ public class PlayerMovement : MonoBehaviour,AI
             while (transform.position != targetPosition)
             {
                 //Move the player to the next Tile
-                transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 5f);
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 10f);
                 // Wait for the next frame before continuing the loop
                 yield return null;
             }
-            
+
             // Update the currentTile variable
             currentTile = targetTile;
         }

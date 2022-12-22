@@ -3,14 +3,13 @@ using UnityEngine;
 public class TextMeshMove : MonoBehaviour
 {
     public TextMesh infoText;
-    public Camera cam;
     Vector3 offsetHeight = new Vector3(0, 0, 5);
 
     void Update()
     {
         // Set the position of the text mesh to the position of the mouse
         transform.position = Input.mousePosition;
-        
+
         // Create a ray from the main camera to the mouse position
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;

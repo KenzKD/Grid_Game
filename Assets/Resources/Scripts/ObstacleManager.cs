@@ -3,7 +3,6 @@ using UnityEngine;
 public class ObstacleManager : MonoBehaviour
 {
     public ObstacleData obstacleData;
-
     private GameObject[,] grid;
 
     void Start()

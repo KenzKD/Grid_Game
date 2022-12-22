@@ -3,14 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour,AI
+public class EnemyMovement : MonoBehaviour, AI
 {
     public ObstacleData obstacleData;
     public TileInformation[,] tiles;
-    public Vector2Int currentTile, targetTile;
-    public bool isMoving = false;
-    public bool isReached = false;
+    private Vector2Int currentTile, targetTile;
+    private bool isMoving = false;
     public Camera cam;
+    public PlayerMovement player;
 
     void Start()
     {
@@ -28,34 +28,25 @@ public class PlayerMovement : MonoBehaviour,AI
         }
     }
 
-    void Update()
+    private void Update()
     {
-        // Check if the left mouse button has been clicked and the player is not currently moving
-        if (Input.GetMouseButtonDown(0) && !isMoving)
+        // Check if the enemy is not currently moving
+        if (!isMoving && player.isReached && !player.isMoving)
         {
-            // Create a ray from the main camera to the mouse position
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            // Get the player's current tile position
+            Vector2Int playerTile = player.currentTile;
 
-            // Check if the raycast hits a collider
-            if (Physics.Raycast(ray, out hit))
-            {
-                // Get the TileInformation component of the hit object
-                TileInformation info = hit.collider.gameObject.GetComponent<TileInformation>();
+            // // Check if the player is in an adjacent tile (up, down, left, or right)
+            // if (playerTile.x == currentTile.x && Math.Abs(playerTile.y - currentTile.y) == 1 ||
+            //     playerTile.y == currentTile.y && Math.Abs(playerTile.x - currentTile.x) == 1)
+            // {
+                // The player is in an adjacent tile, so set the target tile to the player's current tile
+                targetTile = playerTile;
+                Debug.Log("target on " + targetTile);
 
-                // Check if the hit object has a TileInformation component and is not an obstacle
-                if (info != null && !obstacleData.grid[info.tilePosition.x, info.tilePosition.y])
-                {
-                    // Set the target tile to the position of the hit object
-                    targetTile = info.tilePosition;
-                    Debug.Log("click on " + targetTile);
-
-                    isReached = false;
-                    // Start the MoveToTile coroutine
-                    StartCoroutine(MoveToTile());
-
-                }
-            }
+                // Start the MoveToTile coroutine
+                StartCoroutine(MoveToTile());
+            // }
         }
     }
 
@@ -120,6 +111,7 @@ public class PlayerMovement : MonoBehaviour,AI
         isMoving = true;
         // Create a list to store the path
         List<Vector2Int> path = CalculatePath();
+        Debug.Log(path.Count);
 
         // Loop through the path and move the player to each tile
         foreach (Vector2Int t in path)
@@ -132,12 +124,11 @@ public class PlayerMovement : MonoBehaviour,AI
                 // Wait for the next frame before continuing the loop
                 yield return null;
             }
-            
+
             // Update the currentTile variable
             currentTile = targetTile;
         }
         isMoving = false;
-        isReached = true;
     }
 
     // This function returns a list of the tiles that are neighbors of the given tile

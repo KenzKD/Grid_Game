@@ -5,7 +5,7 @@ using System;
 [Serializable]
 public class ObstacleData : ScriptableObject
 {
-    public GameObject obstaclePrefab;
+    [SerializeField]public GameObject obstaclePrefab;
     public bool[,] grid =
     {
         { false, false, false, false, false, false, false, false, false, false },

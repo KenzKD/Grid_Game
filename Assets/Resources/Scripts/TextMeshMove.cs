@@ -24,7 +24,7 @@ public class TextMeshMove : MonoBehaviour
             if (info != null)
             {
                 // Set the position of the info text to the position of the tile with a Height Offset
-                infoText.transform.position = hit.collider.gameObject.transform.position + offsetHeight;
+                infoText.transform.position = hit.collider.gameObject.transform.position;// + offsetHeight;
 
                 // Set the text of the info text to the tile position
                 infoText.text = "Tile Position: " + info.tilePosition;

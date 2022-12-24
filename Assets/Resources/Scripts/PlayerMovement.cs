@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour, AI
     void Start()
     {
         // Initialize the currentTile variable to the player's starting position
-        currentTile = new Vector2Int((int)transform.position.x, (int)transform.position.y);
+        currentTile = new Vector2Int((int)transform.position.x, (int)transform.position.z);
 
         // Initialize the tiles array with the TileInformation objects from the scene
         tiles = new TileInformation[10, 10];
